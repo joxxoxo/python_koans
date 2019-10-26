@@ -1,0 +1,8 @@
+version: "3"
+services:
+  p3:
+    image: python:3-alpine
+    volumes:
+      - ./python3:/app
+    working_dir: /app
+    command: ./run.sh
